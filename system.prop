@@ -270,3 +270,7 @@ persist.audio.speaker.dualmode=true
 audio.offload.min.duration.secs=15
 
 ro.wlan.mimo=1
+
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
