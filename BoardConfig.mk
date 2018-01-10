@@ -155,7 +155,6 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 TARGET_USES_QTI_CAMERA2CLIENT := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 
-
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
@@ -252,9 +251,9 @@ PROTOBUF_SUPPORTED := true
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_chiron
@@ -281,3 +280,5 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 -include vendor/xiaomi/chiron/BoardConfigVendor.mk
 
 ALLOW_MISSING_DEPENDENCIES=true
+
+TARGET_COPY_OUT_VENDOR := system/vendor
