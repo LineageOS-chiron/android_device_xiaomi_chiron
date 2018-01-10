@@ -29,7 +29,7 @@ LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_SRC_FILES := ImageDecoder.c
+LOCAL_SRC_FILES := ImageDecoder.c SkCodec.cpp
 LOCAL_MODULE := libshim_MiCamera
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
